@@ -1,0 +1,63 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "validate-hacker-news-newest-articles-are-sorted-correctly;fetch-and-validate-sorted-articles-from-hacker-news",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Fetch and validate sorted articles from Hacker News",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "the Hacker News newest page is available",
+            "match": {
+              "location": "tests\\src\\stepDefinitions.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 688000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I request the first 100 newest articles",
+            "match": {
+              "location": "tests\\src\\stepDefinitions.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 868109499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "the articles should be sorted from newest to oldest",
+            "match": {
+              "location": "tests\\src\\stepDefinitions.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1195100
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "validate-hacker-news-newest-articles-are-sorted-correctly",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Validate Hacker News newest articles are sorted correctly",
+    "tags": [],
+    "uri": "tests\\gherkinTest.feature"
+  }
+]
